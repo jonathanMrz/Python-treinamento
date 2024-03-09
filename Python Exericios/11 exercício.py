@@ -99,3 +99,9 @@ for pos in range(0,len(lista)):
     else:
         print(f"R${lista[pos]}")
 #Sexta questão[==================================================================]
+palavras=("Oxigenio","Abelha","Cobra","Gatucho")
+for p in palavras:
+    print(f"\nNa palavra {p} temos",end=" ")
+    for letra in p:
+        if letra in "AaEeIiOoUu":
+            print(letra,end=" ")
