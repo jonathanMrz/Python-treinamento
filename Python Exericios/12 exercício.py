@@ -18,6 +18,17 @@ while list_usv1[0] in "S":
         list_usv1[0]=input("[S/N]Deseja adicionar mais um valor? ").upper().strip()
 print(sorted(list_ex2))
 #Terceira questão[===============================================================]
+lista = list()
+for c in range(5):
+    n = int(input("Digite o numero: "))
+    if c == 0 or n > lista[-1]:
+        lista.append(n)
+    else:
+        for pos, x in enumerate(lista):
+            if n <= x:
+                lista.insert(pos, n)
+                break
+print(lista)
 #Quarta questão[=================================================================]
 #Quinta questão[=================================================================]
 #Sexta questão[==================================================================]
