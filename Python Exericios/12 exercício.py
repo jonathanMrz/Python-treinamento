@@ -30,5 +30,52 @@ for c in range(5):
                 break
 print(lista)
 #Quarta questão[=================================================================]
+list_ex3=[]
+list_usv2=["S"]
+while list_usv2[0] in "S":
+    while True:
+        try:
+            list_ex3.append(int(input("Digite um valor: ")))
+            break
+        except:
+            print("Digite um valor válido!")
+    print("-="*20)
+    list_usv2=input("[S/N]Deseja continuar? ")[0].strip().upper()
+    while list_usv2[0] not in "SN":
+        print("Digite um valor válido!")
+        list_usv2=input("[S/N]Deseja continuar? ")[0].strip().upper()
+print("-="*20)
+list_ex3.sort(reverse=True)
+print(f"Os números digitados: {list_ex3}\nA quantidade de números nele: {len(list_ex3)}")
+for c in range(0,list_ex3.count(5)):
+    if c==0:
+        print(f"O número cinco aparece {list_ex3.count(5)} vez na posição: "if list_ex3.count(5)==1
+        else f"O número cinco aparece {list_ex3.count(5)} vezes nas posições: ", end="")
+    print(list_ex3.index(5)+c,end=" ")
 #Quinta questão[=================================================================]
+list_main=[];list_imp=[];list_par=[];list_usv3=["S",0]
+while list_usv3[0] in "S":
+    list_main.append(int(input("Digite um número: ")))
+    if list_main[list_usv3[1]]%2==0:
+        list_par.append(list_main[list_usv3[1]])
+    elif list_main[list_usv3[1]]%2!=0:
+        list_imp.append(list_main[list_usv3[1]])
+    list_usv3[1]+=1
+    list_usv3[0]=input("Deseja continuar?").strip().upper()
+    while list_usv3[0][0] not in "SN":
+        print("Digite um valor válido!")
+        list_usv3[0]=input("Deseja continuar?").strip().upper()
+list_main.sort();list_par.sort();list_imp.sort()
+print(f"Lista principal: {list_main}\n-Lista de números par: {list_par}\n-Lista de números impar: {list_imp}")
 #Sexta questão[==================================================================]
+list_usv4=[];list_ex4=[]
+list_ex4.append(input("Digite uma operação númerica: "))
+list_usv4.append(list_ex4[0].count("(")-list_ex4[0].count(")"))
+if list_ex4[0].count("(")==list_ex4[0].count(")"):
+    print("A operação está certa!")
+while list_ex4[0].count("(")!=list_ex4[0].count(")"):
+    print("A operação está errada")
+    print(f"Você esqueceu de colocar", 
+        f"{list_usv4[0]} ')'" if list_ex4[0].count("(")>list_ex4[0].count(")") else f"{list_usv4[0]*-1}'('",
+        "refaça a operação:")
+    list_ex4[0]=input("Digite uma operação númerica:")
