@@ -4,4 +4,4 @@
 #Quarta questão[=================================================================]
 #Quinta questão[=================================================================]
 #Sexta questão[==================================================================]
-#Somente para fazer exercícios muito longos de forma separado
+#somente para fazer exercícios muito longos de forma separado
