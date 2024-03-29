@@ -4,4 +4,4 @@
 #Quarta questão[=================================================================]
 #Quinta questão[=================================================================]
 #Sexta questão[==================================================================]
-#somente para fazer exercícios muito longos de forma separado
+#sol[0]ente para fazer exercícios muito longos de forma separado
